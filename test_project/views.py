@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Name
-
+from django.conf import settings
 
 def hello(request, name):
-    return render(request, "hello.html", {"name": name })
+
+    return render(request, "hello.html", {"name": name, "env": settings.NAME })
 
     # return HttpResponse("<b>Hello " + name +"</b>")
 
