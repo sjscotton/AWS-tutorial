@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Name
+import environ 
+
 def hello(request, name):
-    return render(request, "hello.html", {"name": name})
+    return render(request, "hello.html", {"name": name, "var": env('NAME') })
 
     # return HttpResponse("<b>Hello " + name +"</b>")
 
