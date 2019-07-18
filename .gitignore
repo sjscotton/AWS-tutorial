@@ -1,0 +1,30 @@
+.vscode 
+env1/*
+.idea/*
+.DS_Store
+
+__pycache__/
+*.py[cod]
+
+build/
+dist/
+sdist/
+.eggs/
+*.egg-info/
+
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.db
